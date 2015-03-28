@@ -173,3 +173,25 @@ padding:0;
 margin-top:4px;
 }
 
+#linkovi{
+width:60%;
+margin:0 auto;
+margin-top:2%;
+
+
+}
+
+
+#linkovi ul{
+
+list-style:none;
+list-style-image:url("images/tacka.gif");
+ padding-left:0;   
+
+
+
+}
+#linkovi li{ 
+ list-style-position:inside
+}
+
