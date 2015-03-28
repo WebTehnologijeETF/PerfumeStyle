@@ -118,7 +118,7 @@ display:inline;
 	width:49%;
 	position:static;
 	border:solid white;
-    border-bottom:4%;
+
     box-sizing: border-box;
 	display:inline-block;
 	text-align:justify;
@@ -126,39 +126,6 @@ display:inline;
 	
 }
 
-#dno{
-width:70%;
-background-image: url("../k.gif");
-
-margin:0 auto;
-    margin-top:250px;
- padding:0 auto;
- text-align:center;
- }
-
-#dno ul{
-list-style-type: none;
-    margin: 0;
-    padding: 0;
-	margin-top:12px;
-
-}
-#dno li{
-list-style-type: none;
-    margin: 0;
-    padding: 0;
-	display: inline;
-	background:white;
-}
-#dno a{
-
-    color:white;
-    text-decoration: none;
-	background:orange;
-
-	border: 10px solid orange;
-    box-sizing: border-box;
-}
 
 #forma {
 color:white;
