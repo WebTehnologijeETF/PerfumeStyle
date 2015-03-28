@@ -1,0 +1,175 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+
+*{
+margin:0;
+padding:0;
+}
+body{
+    background:black;
+}
+#zaglavlje{
+ margin:0 auto;
+ font-family:Lobster;
+ color:white;
+ text-align:center;
+ margin-top:10px;
+ padding:0;
+ font-size:50%;
+
+}
+#zaglavlje img {
+
+    padding: 0;
+
+}
+#zaglavlje p{
+    padding: 0;
+	display: inline;
+    position:relative;
+	margin-left:-6.5%;
+}
+
+
+#meni{
+width:70%;
+margin:0 auto;
+padding: 0;
+text-align:center;
+font-size:medium;
+
+
+ }
+
+#meni ul{
+
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+	margin-top:12px;
+
+}
+#meni li{
+
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+	display: inline;
+	background:white;
+	
+}
+#meni a{
+
+    color:white;
+    text-decoration: none;
+	background:#292929;
+        text-transform: uppercase;
+
+	border: 7px solid ;
+	border-color: #292929;
+    box-sizing: border-box;
+  
+
+	 
+}
+
+#pred {
+  margin-left:20%;
+  margin-top:3%;
+  padding:0;
+
+}
+
+#glavni {
+    margin: 0 auto;
+    width:69%;
+    padding: 0;
+	margin-top:3%;
+	background:#292929;
+	margin-left:21%;
+    vertical-align: text-top;
+    text-align: left;
+
+	border: 2px solid white;
+    color:white;
+
+	
+}
+
+#vijest {
+    margin: 0 auto;
+  
+    padding: 0;
+	background:#292929;
+
+
+
+
+
+}
+#vijest img{
+width:30%;
+display:inline;
+
+}
+#vijest p{
+    text-decoration: none;
+    color:white;
+	width:49%;
+	position:static;
+	border:solid white;
+    border-bottom:4%;
+    box-sizing: border-box;
+	display:inline-block;
+	text-align:justify;
+	
+	
+}
+
+#dno{
+width:70%;
+background-image: url("../k.gif");
+
+margin:0 auto;
+    margin-top:250px;
+ padding:0 auto;
+ text-align:center;
+ }
+
+#dno ul{
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+	margin-top:12px;
+
+}
+#dno li{
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+	display: inline;
+	background:white;
+}
+#dno a{
+
+    color:white;
+    text-decoration: none;
+	background:orange;
+
+	border: 10px solid orange;
+    box-sizing: border-box;
+}
+
+#forma {
+color:white;
+
+   
+    text-align: right;
+	margin-top:4%;
+    width:50%;
+padding:0;
+}
+#forma button{
+margin-top:4px;
+}
+
