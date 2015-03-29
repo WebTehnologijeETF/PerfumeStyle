@@ -44,46 +44,39 @@ font-size:medium;
 #meni ul{
 
 list-style-type: none;
-    margin:0 22%;
+    margin: 0;
     padding: 0;
 	margin-top:12px;
-background:#292929;
+
 }
 #meni li{
 
 list-style-type: none;
-    margin: 1% auto;
+    margin: 0;
     padding: 0;
 	display: inline;
 	background:white;
+	
 }
 #meni a{
-	width:100%;
-	height:100%;
+
     color:white;
     text-decoration: none;
 	background:#292929;
-    text-transform: uppercase; 
- 
-}
+        text-transform: uppercase;
 
-#meni a:hover{
-background:rgba(111,111,111,0.6)
-}
+	border: 7px solid ;
+	border-color: #292929;
+    box-sizing: border-box;
+  
 
-#dno {
-position: fixed;
-	bottom:0;
-	height:25px;
-	left:25%;
-	width: 50%;
-	margin:0 auto;
-	display:block;
+	 
 }
 #dno ul{
 list-style-type: none;
     margin: 0;
     padding: 0;
+	margin-top:2%;
 	text-align:center;
 	}
 	#dno li{
@@ -129,7 +122,11 @@ list-style-type: none;
 	
 }
 
-
+#vijest {
+    margin: 0 auto;
+	padding: 0;
+	background:#292929;
+}
 .author{
 	position:relative;
 	margin:3px;
@@ -141,57 +138,46 @@ list-style-type: none;
 .news{
 padding:15px;
 border:2px solid white;
+}
+.news p{
     text-decoration: none;
     color:white;
 	text-align:justify;
-	border:2px solid white;
-	display:inline-block;
-}
+	border:solid white;
 
+	display:inline-block;
+	text-align:justify;
+	border:2px solid white;
+}
+.news img{
+ display:inline;
+ width:20%;
+
+}
 
 .news:hover {
 	background:rgb(111, 111, 111);
 	}
-	
-	.news img{
-	float:left;
-	width:20%;
-	margin:0 1%;
-	height:auto;
-	}
-	
 #forma {
-position:relative;
 color:white;
-width:35%;
-height:40%;
-margin:1% auto;
-    text-align:right;
-margin-right:45%;
+
+
+    text-align: right;
+	margin-top:4%;
+    width:50%;
   padding:0;
 
 }
 
-#forma form {
-position:relative;
-width:100%;
-height:100%;
+#forma button{
+margin-top:4px;
 }
-
-
-#forma form textarea {
-display:block;
-float:right;
+#forma textarea {
+margin-top:1%;
+margin-left:70%;
 width:173px;
-    padding: 3px;}
-
-.send{
-float:right;
-display:block;
-padding:10px;
-bottom:0px;
-}
-
+    padding: 3px;
+    border: none;}
 
 #linkovi{
 width:60%;
@@ -247,17 +233,9 @@ color:white;
 	width:250px;
 	
 	}
-	
-	thead tr:hover{
-background:none;
-}
-	
 	tr:hover {
 background:rgb(111, 111, 111);
 }
-
-
-
 	#tabele img{
 	height:90px;
 	width:90px;
