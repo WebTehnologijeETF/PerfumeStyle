@@ -127,7 +127,7 @@ list-style-type: none;
 	padding: 0;
 	background:#292929;
 }
-#author{
+.author{
 	position:relative;
 	margin:3px;
 	font-size:70%;
@@ -135,11 +135,11 @@ list-style-type: none;
 	
 	}
 
-#news{
+.news{
 padding:15px;
 border:2px solid white;
 }
-#news p{
+.news p{
     text-decoration: none;
     color:white;
 	text-align:justify;
@@ -149,14 +149,13 @@ border:2px solid white;
 	text-align:justify;
 	border:2px solid white;
 }
-#news img{
- vertical-align:left;
+.news img{
  display:inline;
  width:20%;
 
 }
 
-#news:hover {
+.news:hover {
 	background:rgb(111, 111, 111);
 	}
 #forma {
@@ -200,8 +199,8 @@ list-style-image:url("images/ikona.png");
 
 #linkovi li{ 
  list-style-position:inside;
-
-
+ text-align:left;
+margin-left:20%;	
 }
 
 #linkovi a{
