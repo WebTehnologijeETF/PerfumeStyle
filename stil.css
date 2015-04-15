@@ -32,11 +32,12 @@ body{
 
 
 #meni{
-width:70%;
+width:100%;
 margin:0 auto;
 padding: 0;
 text-align:center;
 font-size:medium;
+position:fixed;
 
 
  }
@@ -44,10 +45,11 @@ font-size:medium;
 #meni ul{
 
 list-style-type: none;
-    margin:0 22%;
+	display:flex;
     padding: 0;
 	margin-top:12px;
 background:#292929;
+	height:50px;
 }
 #meni li{
 
@@ -55,6 +57,7 @@ list-style-type: none;
     margin: 1% auto;
     padding: 0;
 	display: inline;
+		height:50px;
 	background:white;
 }
 #meni a{
@@ -66,7 +69,29 @@ list-style-type: none;
     text-transform: uppercase; 
  
 }
+#podMenu{
 
+	display:none;
+	width:100%;
+	min-width:100%;
+	display:flex;
+
+
+}
+
+#podMenu li{
+	display:none;
+	
+}
+
+#podMenu a{
+
+	display:block;
+	width:100%;
+
+    text-align: center;
+        
+}
 #meni a:hover{
 background:rgba(111,111,111,0.6)
 }
@@ -117,11 +142,12 @@ list-style-type: none;
     margin: 0 auto;
     width:69%;
     padding: 0;
-	margin-top:3%;
+	margin-top:14%;
 	background:#292929;
 	margin-left:21%;
     vertical-align: text-top;
     text-align: left;
+	display:flex;
 
 	border: 2px solid white;
     color:white;
@@ -161,42 +187,56 @@ border:2px solid white;
 	}
 	
 #forma {
+
 position:relative;
 color:white;
-width:35%;
+width:28%;
 height:40%;
 margin:1% auto;
-    text-align:right;
+  margin-top:14%;
 margin-right:45%;
   padding:0;
 
 }
-
+#forma label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: left;
+}
+#forma input {
+  display: inline-block;
+  float: left;
+}
 #forma form {
+
 position:relative;
 width:100%;
 height:100%;
+
+
 }
 
 
 #forma form textarea {
-display:block;
-float:right;
-width:173px;
-    padding: 3px;}
 
-.send{
-float:right;
 display:block;
-padding:10px;
-bottom:0px;
+float:left;
+width:173px;
+padding: 3px;}
+
+#forma .send{
+
+display:inline-block;
+
 }
 
 
 #linkovi{
 width:60%;
 margin:0 auto;
-margin-top:2%;
+margin-top:13%;
 
 
 }
@@ -226,8 +266,12 @@ color:white;
 	
 }
 
+		#iznadtabele{
+	height:13%;
 		
+		}
 	#tabele{
+
 	height:800px;
 	width:48%;
 	margin:0 auto;
@@ -263,5 +307,6 @@ background:rgb(111, 111, 111);
 	width:90px;
 	
 	}
+	
 	
 	

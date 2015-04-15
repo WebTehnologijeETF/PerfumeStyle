@@ -17,14 +17,18 @@
 
  </div>
  
- 
  <div id="meni">
 <ul>
 	<li> <a href="index.html"> Home</a></li>
 	<li> <a href="aboutus.html"> About us</a></li>
 	<li> <a href="products.html"> Products</a></li>
-	<li> <a href="why.html"> Why should you buy our parfumes?</a></li>
-	<li> <a href="friends.html"> Our friends</a></li>
+	<li onmouseover="pokaziMeni()" onmouseout="sakrijMeni()"><a id="FriendsLink" href="friends.html" >Our friends</a>
+			<ul id="podMenu" onmouseover="pokaziMeni()" >
+				<li><a href="#">Armani</a></li>
+				<li><a href="#">D&G</a></li>
+			</ul>
+			</li>
+	
 	<li> <a href="ContactUs.html"> Contact us</a></li>	
 </ul>
  </div>
@@ -41,6 +45,7 @@
 </ul>
  </div>
 
+	<script src="skripta.js"> </script>
 
 
 </BODY></HTML>
