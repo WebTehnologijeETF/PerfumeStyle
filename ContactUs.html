@@ -57,14 +57,14 @@
 	<div id="errorbroj"></div>
 	
 	<label for "email" > E-mail:</label> 
-  	<input class="unos" id="mejl" onchange="approveMail()"onmouseout="approveTexarea()"  type="email" name="email" placeholder="username@example.com" title="Field is required.">
+  	<input class="unos" id="mejl" onchange="approveMail()" onmouseout="approveTexarea()" type="email" name="email" placeholder="username@example.com" title="Field is required.">
 	<a  href="index.html"> <img src="images/w.png" alt="Logo" id="mailslika"></a>
 	<div id="errormail"> </div>
 	
     
-	<label id="textPoruke">Message:</label> <textarea  name="poruka" rows="8" cols="1" onmouseover="approveTexarea()" > </textarea>
+	<label id="textPorukelabela">Message:</label> <textarea  name="poruka"  id="textPoruke" rows="8" cols="1"  > </textarea>
 	<div id="errorTexarea"> </div>
-<input type="submit" onClick="return validiraj()" value="Submit" />
+<input type="submit" onclick="return validateSend()" value="Submit" />
 <input id="reset" onclick="resetall()" type="reset" value="Reset">
 
 </form>

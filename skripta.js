@@ -72,21 +72,25 @@ function validateEmail(mejl) {
 		}
 }
 
-
+window.onload=  function() {
+  var tekst=document.getElementById("textPoruke");	
+  tekst.disabled=true;
+}
 function approveTexarea(){
 	var email = document.getElementById("mejl").value;
-	var tekst=document.getElementById("textPoruke");
+	
 	var ime=document.getElementById("fname").value;
+
 	var prezime=document.getElementById("lname").value;
-	if(validirajEmail(email) && validirajIme(ime)&& validirajlname(prezime) ){
+	if(validateEmail(email) && validirajfname(ime)&& validirajlname(prezime) ){
 		document.getElementById("errorTexarea").innerHTML="";
        tekst.disabled=false;
 	}
 
-else{
-	tekst.disabled=true;
-	document.getElementById("errorTexarea").innerHTML="Input all data";
-}
+	else{
+		tekst.disabled=true;
+		document.getElementById("errorTexarea").innerHTML="Input all data";
+	}
 }
 
 function resetall(){
@@ -101,12 +105,11 @@ function resetall(){
 			document.getElementById("prezimeslika").style.display = "none";
 					document.getElementById("mailslika").style.display = "none";
 	}    
-
-/*
- function validiraj(){
+function validateSend() {
+	var email = document.getElementById("mejl").value;
 	var ime=document.getElementById("fname").value;
-	if(!validirajfname(ime)){
-			return false;
-		}
-			 
-} */
+	var prezime=document.getElementById("lname").value;
+	if( validateEmail(email) && validirajfname(ime) && validirajlname(prezime))
+		return true;
+	else return false;  
+}
