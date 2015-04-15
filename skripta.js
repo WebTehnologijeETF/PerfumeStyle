@@ -71,34 +71,30 @@ function validateEmail(mejl) {
 
 		}
 }
+function mejlf (){
+	var email=document.getElementById("mejl").value;
+		var demail=document.getElementById("mejldva").value;
+		if(email!=demail){
+			document.getElementById("errormaild").innerHTML="Please enter same e-mail";
+				document.getElementById("mailslika2").style.display = "inline";
+			}  
+		else {
+			document.getElementById("errormaild").innerHTML=""; 
+			document.getElementById("mailslika2").style.display = "none";
+		}
 
-window.onload=  function() {
-  var tekst=document.getElementById("textPoruke");	
-  tekst.disabled=true;
 }
-function approveTexarea(){
-	var email = document.getElementById("mejl").value;
-	
-	var ime=document.getElementById("fname").value;
 
-	var prezime=document.getElementById("lname").value;
-	if(validateEmail(email) && validirajfname(ime)&& validirajlname(prezime) ){
-		document.getElementById("errorTexarea").innerHTML="";
-       tekst.disabled=false;
-	}
 
-	else{
-		tekst.disabled=true;
-		document.getElementById("errorTexarea").innerHTML="Input all data";
-	}
-}
+
 
 function resetall(){
 	
 	document.getElementById("errorfname").innerHTML = "";
 	document.getElementById("errormail").innerHTML="";
 		document.getElementById("errorprezime").innerHTML = "";
-
+document.getElementById("errormaild").innerHTML=""; 
+			document.getElementById("mailslika2").style.display = "none";
 	document.getElementById("errorTexarea").innerHTML="";
 	
 	document.getElementById("upozorenje").style.display = "none";
@@ -109,7 +105,8 @@ function validateSend() {
 	var email = document.getElementById("mejl").value;
 	var ime=document.getElementById("fname").value;
 	var prezime=document.getElementById("lname").value;
-	if( validateEmail(email) && validirajfname(ime) && validirajlname(prezime))
+	var demail=document.getElementById("mejldva").value;
+	if( validateEmail(email) && validirajfname(ime) && validirajlname(prezime) && email==demail)
 		return true;
 	else return false;  
 }

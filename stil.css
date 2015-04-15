@@ -242,6 +242,11 @@ height:20px;
 display:inline-block;
 display:none;
 }
+#mailslika2 {
+height:20px;
+display:inline-block;
+display:none;
+}
 #errorfname{
 color:red;
 }
@@ -251,8 +256,12 @@ display:inline-block;
 display:none;
 }
 #errormail{color:red;}
+#errormaild{color:red;}
 #errorprezime {color:red;}
 #errorTexarea{color:red;}
+#numberslika{height:20px;
+display:inline-block;
+display:none;}
 #forma form textarea {
 
 display:block;

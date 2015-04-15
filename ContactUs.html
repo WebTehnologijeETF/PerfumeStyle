@@ -26,7 +26,7 @@
 	<li onmouseover="pokaziMeni()" onmouseout="sakrijMeni()"><a id="FriendsLink" href="friends.html" >Our friends</a>
 			<ul id="podMenu" onmouseover="pokaziMeni()" >
 				<li><a href="#">Armani</a></li>
-				<li><a href="#">D&G</a></li>
+				<li><a href="#">Bvlgari</a></li>
 			</ul>
 			</li>
 	
@@ -37,30 +37,34 @@
  <form action="demo_form.asp" name="mojaforma">
  
  
-	<label for "fname" > First name:</label>
+	<label  > First name:</label>
 	<input class="unos" onchange="approveName()" id="fname" 
 	type="text" name="fname" placeholder="Type first name" title="Field is required.">
 	 <a  href="index.html" >  <img src="images/w.png" alt="Logo" id="upozorenje"> </a>
 	
 	<div id="errorfname"></div>
 
-	<label for "lname"> Last name:</label>
-	<input class="unos" onchange="approveLName()" type="text" name="lname"id="lname" placeholder="Type last name" title="Field is required.">
+	<label > Last name:</label>
+	<input class="unos" onchange="approveLName()" type="text" name="lname" id="lname" placeholder="Type last name" title="Field is required.">
 		 <a  href="index.html"> <img src="images/w.png" alt="Logo" id="prezimeslika"></a>
 
 	<div id="errorprezime"></div>
 	
-	<label for "mynumber"> Number:</label>
+	<label > Number:</label>
 	<input class="unos" type="text"  id="telefon" name="mynumber" placeholder="061544555(optional)"  title="Field is optional." >
-<a  href="index.html"> <img src="images/w.png" alt="Logo" id="upozorenje"></a>
+<a  href="index.html"> <img src="images/w.png" alt="Logo" id="numberslika"></a>
 
 	<div id="errorbroj"></div>
 	
-	<label for "email" > E-mail:</label> 
-  	<input class="unos" id="mejl" onchange="approveMail()" onmouseout="approveTexarea()" type="email" name="email" placeholder="username@example.com" title="Field is required.">
+	<label  > E-mail:</label> 
+  	<input class="unos" id="mejl" onchange="approveMail()"  type="text" name="email" placeholder="username@example.com" title="Field is required.">
 	<a  href="index.html"> <img src="images/w.png" alt="Logo" id="mailslika"></a>
 	<div id="errormail"> </div>
 	
+	<label  > Repeat E-mail:</label> 
+  	<input class="unos" id="mejldva" onchange="mejlf()"  type="text" name="email" placeholder="username@example.com" title="Field is required.">
+	<a  href="index.html"> <img src="images/w.png" alt="Logo" id="mailslika2"></a>
+	<div id="errormaild"> </div>
     
 	<label id="textPorukelabela">Message:</label> <textarea  name="poruka"  id="textPoruke" rows="8" cols="1"  > </textarea>
 	<div id="errorTexarea"> </div>
