@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="stil.css">
 </HEAD>
 <BODY>
-
+	<script src="skripta.js"> </script>
 
 	<div id="zaglavlje">
 	
@@ -34,19 +34,38 @@
 </ul>
  </div>
  <div id="forma"> 
- <form action="demo_form.asp">
+ <form action="demo_form.asp" name="mojaforma">
  
  
+	<label for "fname" > First name:</label>
+	<input class="unos" onchange="approveName()" id="fname" 
+	type="text" name="fname" placeholder="Type first name" title="Field is required.">
+	 <a  href="index.html" >  <img src="images/w.png" alt="Logo" id="upozorenje"> </a>
+	
+	<div id="errorfname"></div>
 
-     <label>First name:</label><input type="text">
-	 <label>Last name:</label><input type="text">
-	  <label>Number</label><input type="text">
-      <label>Email Address:</label><input type = "text">
-	<label>Message:</label> <textarea  name="poruka" rows="8" cols="1">Input message here..
-	</textarea>
- 
-<input type="submit" value="Send" class="send"/>
-<input type="reset" value="Reset" class="send"/>
+	<label for "lname"> Last name:</label>
+	<input class="unos" onchange="approveLName()" type="text" name="lname"id="lname" placeholder="Type last name" title="Field is required.">
+		 <a  href="index.html"> <img src="images/w.png" alt="Logo" id="prezimeslika"></a>
+
+	<div id="errorprezime"></div>
+	
+	<label for "mynumber"> Number:</label>
+	<input class="unos" type="text"  id="telefon" name="mynumber" placeholder="061544555(optional)"  title="Field is optional." >
+<a  href="index.html"> <img src="images/w.png" alt="Logo" id="upozorenje"></a>
+
+	<div id="errorbroj"></div>
+	
+	<label for "email" > E-mail:</label> 
+  	<input class="unos" id="mejl" onchange="approveMail()"onmouseout="approveTexarea()"  type="email" name="email" placeholder="username@example.com" title="Field is required.">
+	<a  href="index.html"> <img src="images/w.png" alt="Logo" id="mailslika"></a>
+	<div id="errormail"> </div>
+	
+    
+	<label id="textPoruke">Message:</label> <textarea  name="poruka" rows="8" cols="1" onmouseover="approveTexarea()" > </textarea>
+	<div id="errorTexarea"> </div>
+<input type="submit" onClick="return validiraj()" value="Submit" />
+<input id="reset" onclick="resetall()" type="reset" value="Reset">
 
 </form>
  </div>
@@ -62,6 +81,6 @@
 	<li> <a href="ContactUs.html"> Contact us</a></li>	
 </ul>
  </div>
-	<script src="skripta.js"> </script>
+
 
 </BODY></HTML>
