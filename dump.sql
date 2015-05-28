@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS `novosti` (
   `slika` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `tekst` text COLLATE utf8_unicode_ci NOT NULL,
   `detaljnije` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `datum` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `datum` TIMESTAMP  NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
 
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `komentari` (
   `autor` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `tekst` text COLLATE utf8_unicode_ci NOT NULL,
-  `datum` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `datum` TIMESTAMP  NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
 
