@@ -17,7 +17,7 @@
 
  </div>
  
- <!--
+
  <div id="meni">
 <ul>
 	<li> <a href="index.php"> Home</a></li>
@@ -33,7 +33,7 @@
 	<li> <a href="ContactUs.html"> Contact us</a></li>	
 </ul>
  </div>
--->
+
  
  <?php #<div id="glavni"> ?>
 
