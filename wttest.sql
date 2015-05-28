@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `korisnici` (
 --
 
 INSERT INTO `korisnici` (`id`, `korisnicko_ime`, `email`, `lozinka`) VALUES
-(1, 'Hamdo', 'hhadzic1@etf.unsa.ba', 'hamdo');
+(11, 'Hamdo', 'hhadzic1@etf.unsa.ba', 'hamdo');
 
 -- --------------------------------------------------------
 
@@ -71,8 +71,8 @@ ALTER TABLE `novosti`
 --
 
 INSERT INTO `novosti` (`id`, `naslov`, `korisnik_id`, `slika`, `tekst`, `detaljnije`, `datum`) VALUES
-(1, 'Naslov', 1, 'images/2.gif', 'Perfume or parfum is a mixture of fragrant essential\r\n oils or aroma compounds, fixatives and solvents used to give the\r\n human body, animals, food, objects, and living spaces "a pleasant scent."[1]\r\nPerfumes have been known to exist in some of the earliest human civilizations,\r\n either through ancient texts or from archaeological digs. Modern perfumery began\r\n in the late 19th century with the commercial synthesis of aroma compounds such as \r\n vanillin or coumarin, which allowed for the composition of perfumes with smells previously \r\n unattainable solely from natural aromatics alone.', NULL, '2015-05-26 23:29:31'),
-(2, 'Nova novost', 1, NULL, 'Nova!', 'Test', '2015-05-28 05:25:26');
+(11, 'Naslov', 1, 'images/2.gif', 'Perfume or parfum is a mixture of fragrant essential\r\n oils or aroma compounds, fixatives and solvents used to give the\r\n human body, animals, food, objects, and living spaces "a pleasant scent."[1]\r\nPerfumes have been known to exist in some of the earliest human civilizations,\r\n either through ancient texts or from archaeological digs. Modern perfumery began\r\n in the late 19th century with the commercial synthesis of aroma compounds such as \r\n vanillin or coumarin, which allowed for the composition of perfumes with smells previously \r\n unattainable solely from natural aromatics alone.', NULL, '2015-05-26 23:29:31'),
+(22, 'Nova novost', 1, NULL, 'Nova!', 'Test', '2015-05-28 05:25:26');
 
 
 --
@@ -97,8 +97,8 @@ ALTER TABLE `komentari`
   ADD CONSTRAINT `komentari_ibfk_1` FOREIGN KEY (`novost_id`) REFERENCES `novosti` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
   
 INSERT INTO `komentari` (`id`, `novost_id`, `autor`, `email`, `tekst`, `datum`) VALUES
-(1, 1, 'Hamdo', 'hhadzic1@etf.unsa.ba', 'Test komentar', '2015-05-28 05:01:37'),
-(2, 2, 'H', 'h@etf.unsa.ba', 'komentar', '2015-05-29 05:31:40');
+(11, 11, 'Hamdo', 'hhadzic1@etf.unsa.ba', 'Test komentar', '2015-05-28 05:01:37'),
+(22, 22, 'H', 'h@etf.unsa.ba', 'komentar', '2015-05-29 05:31:40');
 
 --
 -- Constraints for dumped tables
