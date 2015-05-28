@@ -2,11 +2,11 @@
 
 function pdo()
 {
-	$server         = 'localhost';
+	$server         = '127.7.84.2';
 	$port           = 3306;
-	$naziv          = 'WTtest';
-	$korisnicko_ime = 'root';
-	$lozinka        = '';
+	$naziv          = 'parfumestyle';
+	$korisnicko_ime = 'admin8XrcEWZ';
+	$lozinka        = 'WtfYICDsZYYP';
 	$konekcija = "mysql:host={$server};port={$port};dbname={$naziv}";
 
 	return new PDO($konekcija, $korisnicko_ime, $lozinka);
