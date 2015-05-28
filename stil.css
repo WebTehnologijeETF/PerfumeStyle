@@ -38,7 +38,6 @@ margin:0 auto;
 padding: 0;
 text-align:center;
 font-size:medium;
-position:fixed;
 min-width:1000px;
 
  }
@@ -357,5 +356,7 @@ background:rgb(111, 111, 111);
 	
 	}
 	
-	
+.white {
+	color:white;
+}
 	
