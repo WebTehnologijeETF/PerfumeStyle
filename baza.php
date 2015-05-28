@@ -11,3 +11,4 @@ function pdo()
 
 	return new PDO($konekcija, $korisnicko_ime, $lozinka);
 }
+?>
