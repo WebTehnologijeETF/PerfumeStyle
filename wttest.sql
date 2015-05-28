@@ -62,6 +62,9 @@ CREATE TABLE IF NOT EXISTS `novosti` (
   PRIMARY KEY (`id`),
   KEY `korisnik_id` (`korisnik_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+ALTER TABLE `novosti`
+  ADD CONSTRAINT `novosti_ibfk_2` FOREIGN KEY (`korisnik_id`) REFERENCES `korisnici` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION,
+  ADD CONSTRAINT `novosti_ibfk_1` FOREIGN KEY (`korisnik_id`) REFERENCES `korisnici` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
 -- Dumping data for table `novosti`
@@ -90,10 +93,12 @@ CREATE TABLE IF NOT EXISTS `komentari` (
 --
 -- Dumping data for table `komentari`
 --
-
+ALTER TABLE `komentari`
+  ADD CONSTRAINT `komentari_ibfk_1` FOREIGN KEY (`novost_id`) REFERENCES `novosti` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
+  
 INSERT INTO `komentari` (`id`, `novost_id`, `autor`, `email`, `tekst`, `datum`) VALUES
 (1, 1, 'Hamdo', 'hhadzic1@etf.unsa.ba', 'Test komentar', '2015-05-28 05:01:37'),
-(2, 2, 'H', 'h@etf.unsa.ba', 'komentar', '2015-05-28 05:31:40');
+(2, 2, 'H', 'h@etf.unsa.ba', 'komentar', '2015-05-29 05:31:40');
 
 --
 -- Constraints for dumped tables
@@ -102,15 +107,11 @@ INSERT INTO `komentari` (`id`, `novost_id`, `autor`, `email`, `tekst`, `datum`) 
 --
 -- Constraints for table `komentari`
 --
-ALTER TABLE `komentari`
-  ADD CONSTRAINT `komentari_ibfk_1` FOREIGN KEY (`novost_id`) REFERENCES `novosti` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
+
 
 --
 -- Constraints for table `novosti`
 --
-ALTER TABLE `novosti`
-  ADD CONSTRAINT `novosti_ibfk_2` FOREIGN KEY (`korisnik_id`) REFERENCES `korisnici` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION,
-  ADD CONSTRAINT `novosti_ibfk_1` FOREIGN KEY (`korisnik_id`) REFERENCES `korisnici` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
